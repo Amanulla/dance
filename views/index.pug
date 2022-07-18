@@ -1,0 +1,62 @@
+doctype html
+html
+  head
+    title Aman Dance Academy
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+      ul
+        div#logo
+          img(src="../static/img/logo.png")
+          | ADA
+        li #[a(href="/") Home] 
+        li #[a(href="/") About] 
+        li #[a(href="/") Services]
+        li #[a(href="/") Class Info]
+        li #[a(href="/") Contact Us]
+
+    section#introSection 
+      div Welcome to Aman's Dance Academy
+      div.small Eat Sleep Dance Repeat
+
+    section#missionSection 
+      h2 Our Mission 
+      div.sett
+        div.card
+          h3 Dance Perfection
+          div.card-box
+            div.card-img
+              img(src="../static/img/1.png")
+
+            div.card-content
+              p This is the best dance academy of the universe.
+        div.card
+          h3 Dance the way you like
+          div.card-box
+            div.card-img
+              img(src="../static/img/2.png")
+
+            div.card-content
+              p This is the best dance academy of the universe.
+        div.card
+          h3 Expert Teaching
+          div.card-box
+            div.card-img
+              img(src="../static/img/3.png")
+
+            div.card-content
+              p This is the best dance academy of the universe.
+
+    section#sponsorsSection 
+      h2 Our Sponsors 
+      div#sponsors
+        img(class="spImage" src="../static/img/apple.png", alt="sponser image")
+        img(class="spImage" src="../static/img/aricent.png", alt="sponser image")
+        img(class="spImage" src="../static/img/at&t.png", alt="sponser image")
+        img(class="spImage" src="../static/img/ferrari.png", alt="sponser image")
+    
+    footer#footer 
+      | Copyright © 2022 AmanDanceAcademy.com | All rights reserved
+    script
+      include ../static/index.js
